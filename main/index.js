@@ -1,6 +1,7 @@
 import alert from './utils.js';
 
-import { fib } from 'my-lib/fib.js';
+import fib from '@my-lib/fib';
+// import sum from '@my-lib/sum';
 
 function main() {
   const appElem = document.getElementById('app');

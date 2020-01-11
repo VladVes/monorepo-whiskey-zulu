@@ -1,4 +1,4 @@
-export const fib = (n) => {
+export default fib = (n) => {
   let prev = 0, next = 1;
   for(let i = 0; i < n; i++){
     let temp = next;
