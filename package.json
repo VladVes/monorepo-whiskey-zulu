@@ -1,8 +1,8 @@
 {
-  "name": "monorepo-test",
+  "name": "zulu-whiskey",
   "version": "0.1.0",
   "private": true,
-  "workspaces": ["main", "my-lib"],
+  "workspaces": ["main", "lib"],
   "scripts": {
     "start": "yarn --cwd ./main dev"
   }

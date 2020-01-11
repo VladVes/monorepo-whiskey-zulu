@@ -131,15 +131,15 @@ function alert(msg) {
 
 var _default = alert;
 exports.default = _default;
-},{}],"../node_modules/my-lib/fib.js":[function(require,module,exports) {
+},{}],"../node_modules/@zulu-whiskey/lib/fib/index.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.fib = void 0;
+exports.default = void 0;
 
-const fib = n => {
+var _default = n => {
   let prev = 0,
       next = 1;
 
@@ -152,24 +152,39 @@ const fib = n => {
   return prev;
 };
 
-exports.fib = fib;
+exports.default = _default;
+},{}],"../node_modules/@zulu-whiskey/lib/sum/index.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _default = (a, b) => {
+  return a + b;
+};
+
+exports.default = _default;
 },{}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _utils = _interopRequireDefault(require("./utils.js"));
 
-var _fib = require("my-lib/fib.js");
+var _fib = _interopRequireDefault(require("@zulu-whiskey/lib/fib"));
+
+var _sum = _interopRequireDefault(require("@zulu-whiskey/lib/sum"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function main() {
   var appElem = document.getElementById('app');
   appElem.innerHTML = '<h1>Monorepo go!</h1>';
-  (0, _utils.default)('It works! ' + (0, _fib.fib)(10));
+  (0, _utils.default)('It works! ' + (0, _fib.default)(10) + (0, _sum.default)(3, 4));
 }
 
 window.onload = main;
-},{"./utils.js":"utils.js","my-lib/fib.js":"../node_modules/my-lib/fib.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./utils.js":"utils.js","@zulu-whiskey/lib/fib":"../node_modules/@zulu-whiskey/lib/fib/index.js","@zulu-whiskey/lib/sum":"../node_modules/@zulu-whiskey/lib/sum/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -197,7 +212,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "45421" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "37625" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
