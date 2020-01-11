@@ -2,5 +2,8 @@
   "name": "monorepo-test",
   "version": "0.1.0",
   "private": true,
-  "workspaces": ["workspace-a", "workspace-b"]
+  "workspaces": ["main", "lib"],
+  "scripts": {
+    "start": "yarn --cwd ./main start"
+  }
 }
