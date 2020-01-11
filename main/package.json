@@ -2,11 +2,14 @@
   "name": "main",
   "version": "1.0.0",
   "scripts": {
-    "start": "http-server"
+    "dev": "parcel ./index.html"
   },
   "dependencies": {
     "cross-env": "5.0.5",
     "http-server": "^0.12.1",
-    "lib": "1.0.0"
+    "my-lib": "1.0.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
