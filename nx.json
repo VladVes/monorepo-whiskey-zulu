@@ -10,5 +10,18 @@
     "tslint.json": "*",
     "nx.json": "*"
   },
-  "projects": {}
+  "projects": {
+    "foxtrot-react": {
+      "tags": []
+    },
+    "foxtrot-react-e2e": {
+      "tags": []
+    },
+    "todos": {
+      "tags": []
+    },
+    "todos-e2e": {
+      "tags": []
+    }
+  }
 }
