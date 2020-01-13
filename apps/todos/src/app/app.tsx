@@ -5,7 +5,7 @@ interface Todo {
 }
 
 export const App = () => {
-  const [todos, setTodos] = useState<Todo[]>([]);
+  const [todos, setTodos] = useState<Todo[]>([{ title: 'Todo 1' }]);
 
   useEffect(() => {
     fetch('/api/todos')
