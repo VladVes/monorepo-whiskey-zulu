@@ -1,5 +1,5 @@
 {
-  "npmScope": "nx-mono-whiskey-react",
+  "npmScope": "monorepo-whiskey-zulu",
   "implicitDependencies": {
     "workspace.json": "*",
     "package.json": {
@@ -18,6 +18,9 @@
       "tags": []
     },
     "api": {
+      "tags": []
+    },
+    "data": {
       "tags": []
     }
   }
