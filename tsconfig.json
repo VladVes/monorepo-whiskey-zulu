@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@monorepo-whiskey-zulu/data": ["libs/data/src/index.ts"]
+      "@monorepo-whiskey-zulu/data": ["libs/data/src/index.ts"],
+      "@monorepo-whiskey-zulu/ui": ["libs/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
