@@ -11,12 +11,6 @@
     "nx.json": "*"
   },
   "projects": {
-    "foxtrot-react": {
-      "tags": []
-    },
-    "foxtrot-react-e2e": {
-      "tags": []
-    },
     "todos": {
       "tags": []
     },

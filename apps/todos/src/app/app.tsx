@@ -14,12 +14,14 @@ export const App = () => {
   }, []);
 
   function addTodo() {
-    setTodos([
-      ...todos,
-      {
-        title: `New todo ${Math.floor(Math.random() * 1000)}`
-      }
-    ]);
+    fetch('/api/addTodo', {
+      method: 'POST',
+      body: ''
+    })
+      .then(_ => _.json())
+      .then(newTodo => {
+        setTodos([...todos, newTodo]);
+      });
   }
 
   return (
