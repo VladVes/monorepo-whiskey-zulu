@@ -1,4 +1,5 @@
-# NxMonoWhiskeyReact
+# monorepo whiskey zulu 
+monorepo probe with nx
 
 This project was generated using [Nx](https://nx.dev).
 
